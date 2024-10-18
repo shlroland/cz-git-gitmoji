@@ -1,5 +1,5 @@
 import { UserConfig } from "cz-git";
-import { createGitmojiTypesPrompt } from "./factory";
+import { createGitmojiTypesPrompt, formatMessage } from "./factory";
 
 export default {
   prompt: {
@@ -22,23 +22,14 @@ export default {
     types: createGitmojiTypesPrompt(),
     useEmoji: true,
     emojiAlign: 'left',
-    useAI: false,
-    aiNumber: 1,
-    themeColorCode: '',
+    themeColorCode: '38;5;220',
     scopes: [],
-    allowCustomScopes: true,
-    allowEmptyScopes: true,
-    customScopesAlign: 'bottom',
-    customScopesAlias: 'custom',
-    emptyScopesAlias: 'empty',
-    upperCaseSubject: false,
-    markBreakingChangeMode: false,
-    allowBreakingChanges: undefined,
-    breaklineNumber: 100,
-    breaklineChar: '|',
-    skipQuestions: [],
+    allowBreakingChanges: [':boom:'],
     issuePrefixes: [
       { value: 'closed', name: 'closed:   ISSUES has been processed' },
     ],
+    formatMessageCB(messageMod) {
+      return formatMessage(messageMod)
+    },
   }
 } satisfies UserConfig
