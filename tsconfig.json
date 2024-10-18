@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/types": ["./types/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "configs/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

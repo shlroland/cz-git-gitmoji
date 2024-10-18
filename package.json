@@ -1,0 +1,17 @@
+{
+  "name": "cz-git-gitmoji",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-git": "^1.10.1",
+    "vite": "^5.4.9"
+  }
+}
