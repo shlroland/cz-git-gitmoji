@@ -1,8 +1,8 @@
 import type { CommitMessageOptions, TypesOption } from 'cz-git'
-import json from 'virtual:gitmoji-json' assert { type: 'json' }
+import { gitmojis } from 'gitmojis'
 
 export function createGitmojiTypesPrompt(): TypesOption[] {
-  return json.map((item) => ({
+  return gitmojis.map((item) => ({
     value: item.code,
     name: `${item.emoji}  - ${item.description}`,
     emoji: item.code,
