@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["ESNext"],
+    "lib": [
+      "ESNext",
+    ],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
@@ -13,9 +15,17 @@
     "skipLibCheck": true,
     "baseUrl": "./",
     "paths": {
-      "@/types": ["./types/index.ts"]
+      "@/types": [
+        "./types/index.ts"
+      ]
     }
   },
-  "include": ["src/**/*.ts", "configs/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src/**/*.ts",
+    "configs/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
