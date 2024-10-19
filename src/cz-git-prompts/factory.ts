@@ -4,7 +4,7 @@ import { gitmojis } from 'gitmojis'
 export function createGitmojiTypesPrompt(): TypesOption[] {
   return gitmojis.map((item) => ({
     value: item.code,
-    name: `${item.emoji}  - ${item.description}`,
+    name: `${item.emoji}  -  ${item.description}`,
     emoji: item.code,
   }))
 }

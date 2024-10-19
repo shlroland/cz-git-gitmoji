@@ -19,6 +19,7 @@ export default {
       generatedSelectByAI: 'Select suitable subject by AI generated:',
       confirmCommit: 'Are you sure you want to proceed with the commit above?',
     },
+    typesSearchValue: false,
     types: createGitmojiTypesPrompt(),
     useEmoji: true,
     emojiAlign: 'left',

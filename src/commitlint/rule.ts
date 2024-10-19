@@ -1,5 +1,4 @@
 import { Rule } from '@commitlint/types';
-import { gitmojiCodeRegex, gitmojiUnicodeRegex, emojiRegex } from '@gitmoji/gitmoji-regex';
 import { gitmojis } from 'gitmojis';
 
  const gitmojiCodes: string[] = gitmojis.map((gitmoji) => gitmoji.code);
