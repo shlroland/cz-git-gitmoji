@@ -9,18 +9,18 @@ export const gitmojiRule: Rule = (parsed) => {
   let errorMsg = 'passed';
   let pass;
 
-  const { type } = parsed;
+  const { emojiType } = parsed;
 
-  if (!type) {
+  if (!emojiType) {
     pass = false;
     errorMsg = 'Your commit type is empty, please add your commit message.';
     return [pass, errorMsg];
   }
 
-  pass = gitmojiUnicode.includes(type) || gitmojiCodes.includes(type);
+  pass = gitmojiUnicode.includes(emojiType) || gitmojiCodes.includes(emojiType);
 
   if (!pass) {
-    errorMsg = `${type} is not in the correct gitmoji list, please check the emoji code on https://gitmoji.dev/.`;
+    errorMsg = `${emojiType} is not in the correct gitmoji list, please check the emoji code on https://gitmoji.dev/.`;
   }
 
   return [pass, errorMsg];

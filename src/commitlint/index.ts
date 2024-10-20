@@ -20,8 +20,6 @@ const rules: QualifiedRules = {
   'subject-empty': [RuleConfigSeverity.Error, 'never'],
   // subject can not use dot
   'subject-full-stop': [RuleConfigSeverity.Error, 'never', '.'],
-  // type can not be empty
-  'type-empty': [RuleConfigSeverity.Error, 'never'],
 };
 
 const config: { plugins: Plugin[]; parserPreset: LintOptions; rules: QualifiedRules } = {

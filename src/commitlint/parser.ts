@@ -6,10 +6,10 @@ const gitmojiCodeStr = gitmojiCodeRegex.source;
 const gitmojiUnicodeStr = gitmojiUnicodeRegex.source;
 const emojiStr = emojiRegex.source;
 
+const headerPattern = new RegExp(`^(?<emojiType>${gitmojiCodeStr}|(?:${gitmojiUnicodeStr})|(?:${emojiStr}))\\s?(?:\\((?<scope>.*)\\))?!?:\\s(?<subject>.+)$`)
 
 const parserOpts: LintOptions['parserOpts'] = {
-  headerPattern:
-   new RegExp(`^(?<emojiType>${gitmojiCodeStr}|(?:${gitmojiUnicodeStr})|(?:${emojiStr}))\\s?(?:\\((?<scope>.*)\\))?!?:\\s(?<subject>.+)$`),
+  headerPattern,
   headerCorrespondence: ['emojiType', 'scope', 'subject'],
   noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'],
   revertPattern: /^(?<emojiType>⏪️|:rewind:):\\s(?<subject>[\s\S]*?)\s*This reverts commit (?<hash>\w+)\./i,
