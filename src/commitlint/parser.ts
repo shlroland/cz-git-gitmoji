@@ -6,7 +6,7 @@ const gitmojiCodeStr = gitmojiCodeRegex.source
 const gitmojiUnicodeStr = gitmojiUnicodeRegex.source
 const emojiStr = emojiRegex.source
 
-const headerPattern = new RegExp(`^(?<emojiType>${gitmojiCodeStr}|(?:${gitmojiUnicodeStr})|(?:${emojiStr}))\\s?(?:\\((?<scope>.*)\\))?!?:\\s(?<subject>.+)$`)
+const headerPattern = new RegExp(`^(?<emojiType>${gitmojiCodeStr}|(?:${gitmojiUnicodeStr})|(?:${emojiStr}))\\s?(?:\\((?<scope>.*)\\))?!?:?\\s(?<subject>.+)$`)
 
 const parserOpts: LintOptions['parserOpts'] = {
   headerPattern,
