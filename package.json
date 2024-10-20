@@ -19,18 +19,22 @@
     }
   },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
+    "@commitlint/format": "^19.5.0",
     "@commitlint/types": "^19.5.0",
     "@shlroland/cz-config": "^2.1.1",
+    "@shlroland/lint-staged": "^3.1.1",
     "@types/node": "^22.7.6",
     "cz-git": "^1.10.1",
     "czg": "^1.10.1",
+    "husky": "^9.1.6",
     "tsup": "^8.3.0",
     "tsx": "^4.19.1"
   },
