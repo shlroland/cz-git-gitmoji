@@ -1,0 +1,32 @@
+{
+  "name": "cz-git-gitmoji-prompts",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "a gitmojis adapter for cz-git prompts",
+  "keywords": [
+    "cz-git",
+    "gitmojis"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "gitmojis": "catalog:"
+  },
+  "devDependencies": {
+    "tsup": "catalog:"
+  }
+}

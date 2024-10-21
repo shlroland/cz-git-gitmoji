@@ -1,0 +1,7 @@
+packages:
+  - commitlint
+  - cz-git-prompts
+
+catalog:
+  gitmojis: ^3.14.0
+  tsup: ^8.3.0

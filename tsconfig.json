@@ -21,8 +21,8 @@
     "skipLibCheck": true
   },
   "include": [
-    "src/**/*.ts",
-    "configs/**/*.ts"
+    "commitlint",
+    "cz-git-prompts"
   ],
   "exclude": [
     "node_modules",

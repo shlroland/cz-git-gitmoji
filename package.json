@@ -2,6 +2,7 @@
   "name": "cz-git-gitmoji",
   "type": "module",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "author": "",
   "license": "MIT",
@@ -35,14 +36,9 @@
     "lint": "eslint --fix .",
     "prepare": "husky"
   },
-  "dependencies": {
-    "@gitmoji/gitmoji-regex": "^1.0.0",
-    "gitmojis": "^3.14.0"
-  },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/format": "^19.5.0",
-    "@commitlint/types": "^19.5.0",
     "@shlroland/cz-config": "^2.1.1",
     "@shlroland/eslint-config": "^2.1.1",
     "@shlroland/lint-staged": "^3.1.1",
@@ -53,7 +49,7 @@
     "eslint-plugin-format": "^0.1.2",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
-    "tsup": "^8.3.0",
+    "tsup": "catalog:",
     "tsx": "^4.19.1",
     "typescript": "^5.6.3"
   }
