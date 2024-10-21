@@ -2,14 +2,16 @@
   "name": "cz-git-gitmoji",
   "type": "module",
   "version": "1.0.0",
-  "private": true,
-  "description": "",
-  "author": "",
+  "description": "A few configurations for using gitmojis in cz",
+  "author": "shlroland <shlroland1995@gmail.com>",
   "license": "MIT",
   "keywords": [
     "cz",
     "czg",
-    "commitlint"
+    "commitlint",
+    "gitmoji",
+    "cz-git",
+    "cz-git-prompts"
   ],
   "exports": {
     ".": {
