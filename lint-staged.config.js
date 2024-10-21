@@ -1,5 +1,3 @@
+import lintStaged from '@shlroland/lint-staged'
 
-  import lintStaged from "@shlroland/lint-staged"
-
-  export default lintStaged
-  
+export default lintStaged

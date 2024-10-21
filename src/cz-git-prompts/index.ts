@@ -1,11 +1,11 @@
-import { UserConfig } from "cz-git";
-import { createGitmojiTypesPrompt, formatMessage } from "./factory";
+import type { UserConfig } from 'cz-git'
+import { createGitmojiTypesPrompt, formatMessage } from './factory'
 
 export default {
   prompt: {
     alias: { fd: '✏️: fix typos', uv: '🔖: update versions' },
     messages: {
-      type: "Select an emoji that represents a type of change that you\'re committing:",
+      type: 'Select an emoji that represents a type of change that you\'re committing:',
       scope: 'Select the scope of this change (optional):',
       subject: 'Write a short, imperative tense description of the change (required):',
       body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
@@ -32,5 +32,5 @@ export default {
     formatMessageCB(messageMod) {
       return formatMessage(messageMod)
     },
-  }
+  },
 } satisfies UserConfig

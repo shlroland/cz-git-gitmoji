@@ -1,7 +1,7 @@
-import { LintOptions, Plugin, type QualifiedRules, RuleConfigSeverity } from "@commitlint/types";
-import { gitmojiUnicode } from "./rule";
-import { parserPreset } from "./parser";
-import { gitmojiPlugin } from "./plugin";
+import { type LintOptions, type Plugin, type QualifiedRules, RuleConfigSeverity } from '@commitlint/types'
+import { parserPreset } from './parser'
+import { gitmojiPlugin } from './plugin'
+import { gitmojiUnicode } from './rule'
 
 const rules: QualifiedRules = {
   // gitmoji rule
@@ -20,12 +20,12 @@ const rules: QualifiedRules = {
   'subject-empty': [RuleConfigSeverity.Error, 'never'],
   // subject can not use dot
   'subject-full-stop': [RuleConfigSeverity.Error, 'never', '.'],
-};
+}
 
-const config: { plugins: Plugin[]; parserPreset: LintOptions; rules: QualifiedRules } = {
+const config: { plugins: Plugin[], parserPreset: LintOptions, rules: QualifiedRules } = {
   rules,
   parserPreset,
   plugins: [gitmojiPlugin],
-};
+}
 
-export default config;
+export default config
