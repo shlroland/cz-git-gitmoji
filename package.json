@@ -5,7 +5,11 @@
   "description": "",
   "author": "",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "cz",
+    "czg",
+    "commitlint"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -16,6 +20,11 @@
       "types": "./dist/cz-git.d.ts",
       "import": "./dist/cz-git.js",
       "require": "./dist/cz-git.cjs"
+    },
+    "./commitlint": {
+      "types": "./dist/commitlint.d.ts",
+      "import": "./dist/commitlint.ts",
+      "require": "./dist/commitlint.cjs"
     }
   },
   "main": "dist/index.cjs",
