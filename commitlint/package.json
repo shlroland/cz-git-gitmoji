@@ -3,6 +3,13 @@
   "type": "module",
   "version": "0.0.0",
   "description": "a gitmojis config for commitlint",
+  "author": "shlroland <shlroland1995@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/shlroland/cz-git-gitmoji",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shlroland/cz-git-gitmoji"
+  },
   "keywords": [
     "commitlint",
     "gitmojis",
