@@ -1,10 +1,11 @@
 import type { CommitMessageOptions, TypesOption } from 'cz-git'
 import { gitmojis } from 'gitmojis'
+import c from 'picocolors'
 
 export function createGitmojiTypesPrompt(): TypesOption[] {
   return gitmojis.map(item => ({
     value: item.code,
-    name: `${item.emoji}  -  ${item.description}`,
+    name: `${item.emoji}  ${c.blue(item.code)}  ${item.description}`,
     emoji: item.code,
   }))
 }

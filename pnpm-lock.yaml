@@ -84,6 +84,9 @@ importers:
       gitmojis:
         specifier: 'catalog:'
         version: 3.14.0
+      picocolors:
+        specifier: ^1.1.1
+        version: 1.1.1
     devDependencies:
       tsup:
         specifier: 'catalog:'
