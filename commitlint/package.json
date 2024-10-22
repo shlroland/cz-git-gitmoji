@@ -1,7 +1,7 @@
 {
   "name": "commitlint-config-czg-gitmoji",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a gitmojis config for commitlint",
   "author": "shlroland <shlroland1995@gmail.com>",
   "license": "MIT",
