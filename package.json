@@ -34,7 +34,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup",
+    "build": "pnpm --parallel --filter cz-git-gitmoji-prompts --filter commitlint-config-czg-gitmoji build",
     "lint": "eslint --fix .",
     "prepare": "husky"
   },
