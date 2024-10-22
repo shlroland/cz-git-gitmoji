@@ -1,7 +1,7 @@
 {
   "name": "cz-git-gitmoji-prompts",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a gitmojis adapter for cz-git prompts",
   "author": "shlroland <shlroland1995@gmail.com>",
   "license": "MIT",
