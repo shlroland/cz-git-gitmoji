@@ -36,7 +36,9 @@
   "scripts": {
     "build": "pnpm --parallel --filter cz-git-gitmoji-prompts --filter commitlint-config-czg-gitmoji build",
     "lint": "eslint --fix .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "ci:version": "pnpm changeset version && pnpm install --no-frozen-lockfile",
+    "ci:publish": "pnpm install --no-frozen-lockfile && pnpm run build:package && pnpm publish --access public -r --no-git-checks --tag latest"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.9",
