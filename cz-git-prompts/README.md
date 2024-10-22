@@ -10,7 +10,7 @@ pnpm add -D cz-git-prompts
 
 ## Usage
 Ensure you have `czg` cli or `commitizen` + `czg-git` installed.
-Echo the following code to your commitlint config(e.g.`commitlint.config.js`) or czg config(e.g. `cz-config.js`):
+Echo the following code to your commitlint config(e.g.`commitlint.config.js`) or czg config(e.g. `cz.config.js`):
 
 ```ts
 // for `commitlint.config.js`
@@ -21,7 +21,7 @@ export default {
   ...promptsConfig,
 }
 
-// for `cz-config.js`
+// for `cz.config.js`
 export default {
   // ...
   ...promptsConfig.prompt,
